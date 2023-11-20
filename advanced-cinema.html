@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced CSS Selectors | Cinema</title>
+    <style>
+        body {
+            background-color: #333;
+            color: white;
+            font-family: Arial;
+        }
+        .cinema {
+            border: 1px dotted red;
+            padding: 5px;
+            text-align: center;
+        }
+        
+        .cinema .vip span {
+            background-image: url(https://icons.iconarchive.com/icons/archigraphs/modern-chairs/72/Orange-Seat-icon.png);
+            display: inline-block;
+            width: 72px;
+            height: 72px;
+            vertical-align: top;
+            opacity: 0.2;
+        }
+        .cinema .main span {
+            background-image: url(https://icons.iconarchive.com/icons/archigraphs/modern-chairs/72/Magenta-Seat-icon.png);
+            display: inline-block;
+            width: 72px;
+            height: 72px;
+            vertical-align: top;
+            opacity: 0.2;
+        }
+        .cinema .front span {
+            background-image: url(https://icons.iconarchive.com/icons/archigraphs/modern-chairs/72/Magenta-Seat-icon.png);
+            display: inline-block;
+            width: 72px;
+            height: 72px;
+            opacity: 0.2;
+        }
+        .cinema .main .row span:nth-child(4) {
+            margin-right: 72px;
+        }
+        .cinema span:hover{
+            background-position: center;
+            background-image: url(https://icons.iconarchive.com/icons/awicons/vista-artistic/32/add-icon.png);
+            cursor: pointer;
+            background-repeat: no-repeat;
+            opacity: 1;
+        }
+        .cinema .vip .row span:nth-child(7):hover {
+            background-image: url(https://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/32/Status-user-busy-icon.png);
+            background-position: top; 
+        }
+        .cinema .main .row:nth-child(3) span:nth-child(5):hover {
+            background-image: url(https://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/32/Status-user-busy-icon.png);
+            background-position: top; 
+        }
+        img{
+            opacity: 0.3;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>
+        Advanced CSS Selectors <br> Cinema
+    </h1>
+
+    <div class="cinema">
+        <div class="vip">
+            <h2>VIP</h2>
+            <div class="row"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7<br><img src="https://icons.iconarchive.com/icons/custom-icon-design/pretty-office-2/48/man-icon.png"></span></div>
+        </div>
+        <div class="main">
+            <h2>Main</h2>
+            <div class="row"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7 </span><span>8</span></div>
+            <div class="row"><span>1</span><span>2</span><span>3</span><span>4</span><span>5<br><img src="https://icons.iconarchive.com/icons/aha-soft/free-large-boss/48/Caucasian-Female-Boss-icon.png"></span><span>6</span><span>7</span><span>8</span></div>
+            <div class="row"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span></div>
+        </div>
+        <div class="front">
+            <h2>Front</h2>
+            <div class="row"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div>
+            <div class="row"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div>
+        </div>
+    </div>
+</body>
+</html>
